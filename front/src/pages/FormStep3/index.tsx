@@ -27,7 +27,8 @@ export const FormStep3 = () => {
 
         if (state.email !== '' && state.github !== '') {
             // enviar o state para api
-            console.log(state);
+            toast.success("Cadastro concluído com sucesso!");
+            navigate("/");
         } else {
             toast.warning("Por favor preencha todos os campos.");
         }
