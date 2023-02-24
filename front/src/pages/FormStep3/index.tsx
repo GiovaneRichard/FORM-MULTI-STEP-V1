@@ -1,6 +1,7 @@
 import { ChangeEvent, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { Theme } from "../../components/Theme";
 import { FormActions, useForm } from "../../contexts/FormContext";
 import { Container } from "./styled";
@@ -25,9 +26,10 @@ export const FormStep3 = () => {
     const handleFinalizarCadastro = () => {
 
         if (state.email !== '' && state.github !== '') {
+            // enviar o state para api
             console.log(state);
         } else {
-            alert("Por favor preencha todos os campos.");
+            toast.warning("Por favor preencha todos os campos.");
         }
 
     }
@@ -63,7 +65,7 @@ export const FormStep3 = () => {
 
                 <label htmlFor="github">Qual o se GitHub</label>
                 <input
-                    type="url" id="github"
+                    type="text" id="github"
                     value={state.github}
                     onChange={handleGithubChange}
                 />

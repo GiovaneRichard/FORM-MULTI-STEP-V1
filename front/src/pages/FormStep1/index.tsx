@@ -21,7 +21,7 @@ export const FormStep1 = () => {
         if (state.name !== '') {
             navigate("/step2");
         } else {
-            alert("Por favor preencha todos os dados!");
+            toast.warning("Por favor preencha todos os dados!");
         }
 
     }
