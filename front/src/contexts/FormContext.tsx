@@ -4,7 +4,7 @@ import { createContext, useContext, useReducer } from "react";
 type StateType = {
     currentStep: number;
     name: string;
-    leve: 0 | 1;
+    level: 0 | 1;
     email: string;
     github: string;
 }
@@ -23,7 +23,7 @@ type ContextType = {
 const initialState: StateType = {
     currentStep: 0,
     name: '',
-    leve: 0,
+    level: 0,
     email: '',
     github: '',
 }

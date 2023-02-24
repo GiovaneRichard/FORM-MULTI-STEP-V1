@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  border-bottom: 1px solid #16195c;
 
   h1 {
     margin: 0;
@@ -14,5 +14,6 @@ export const Container = styled.div`
   p {
     font-size: 14px;
     color: #b8b8d4;
+    margin-bottom: 1rem;
   }
 `;

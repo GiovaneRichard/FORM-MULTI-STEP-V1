@@ -25,7 +25,6 @@ export const Container = styled.div`
 
   /* MAIN - CONTENT */
   main {
-    background: green;
     flex: 1;
     padding-left: 40px;
     padding-top: 40px;

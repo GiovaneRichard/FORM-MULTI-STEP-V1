@@ -11,7 +11,6 @@ export const Theme = ({ children }: { children: JSX.Element }) => {
                     <div className="sidebar">
                         sidebar
                     </div>
-
                     <main>{children}</main>
                 </div>
             </div>
